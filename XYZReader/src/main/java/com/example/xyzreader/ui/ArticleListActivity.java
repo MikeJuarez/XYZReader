@@ -13,6 +13,8 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
@@ -42,7 +44,7 @@ import java.util.GregorianCalendar;
  * touched, lead to a {@link ArticleDetailActivity} representing item details. On tablets, the
  * activity presents a grid of items as cards.
  */
-public class ArticleListActivity extends ActionBarActivity implements
+public class ArticleListActivity extends AppCompatActivity implements
         LoaderManager.LoaderCallbacks<Cursor> {
 
     private static final String TAG = ArticleListActivity.class.toString();
@@ -54,7 +56,7 @@ public class ArticleListActivity extends ActionBarActivity implements
     // Use default locale format
     private SimpleDateFormat outputFormat = new SimpleDateFormat();
     // Most time functions can only handle 1902 - 2037
-    private GregorianCalendar START_OF_EPOCH = new GregorianCalendar(2,1,1);
+    private GregorianCalendar START_OF_EPOCH = new GregorianCalendar(2, 1, 1);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,14 +65,16 @@ public class ArticleListActivity extends ActionBarActivity implements
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
-
-        final View toolbarContainerView = findViewById(R.id.toolbar_container);
+        //final View toolbarContainerView = findViewById(R.id.toolbar_container);
 
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-        RecyclerView.ItemDecoration dividerItemDecoration = new DividerItemDecoration(this, ContextCompat.getDrawable(this,R.drawable.padded_divider),DividerItemDecoration.VERTICAL_LIST);
-        mRecyclerView.addItemDecoration(dividerItemDecoration);
+        int columnCount = getResources().getInteger(R.integer.list_column_count);
+        if (columnCount == 1) {
+            RecyclerView.ItemDecoration dividerItemDecoration = new DividerItemDecoration(this, ContextCompat.getDrawable(this, R.drawable.padded_divider), DividerItemDecoration.VERTICAL_LIST);
+            mRecyclerView.addItemDecoration(dividerItemDecoration);
+        }
 
         getLoaderManager().initLoader(0, null, this);
 
@@ -123,8 +127,8 @@ public class ArticleListActivity extends ActionBarActivity implements
         adapter.setHasStableIds(true);
         mRecyclerView.setAdapter(adapter);
         //int columnCount = getResources().getInteger(R.integer.list_column_count);
-        LinearLayoutManager sglm =
-                new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        GridLayoutManager sglm =
+                new GridLayoutManager(this, getResources().getInteger(R.integer.list_column_count));
         mRecyclerView.setLayoutManager(sglm);
     }
 
@@ -188,8 +192,8 @@ public class ArticleListActivity extends ActionBarActivity implements
             } else {
                 holder.subtitleView.setText(Html.fromHtml(
                         outputFormat.format(publishedDate)
-                        + "<br/>" + " by "
-                        + mCursor.getString(ArticleLoader.Query.AUTHOR)));
+                                + "<br/>" + " by "
+                                + mCursor.getString(ArticleLoader.Query.AUTHOR)));
             }
             holder.thumbnailView.setImageUrl(
                     mCursor.getString(ArticleLoader.Query.THUMB_URL),

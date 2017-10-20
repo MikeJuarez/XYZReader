@@ -23,10 +23,12 @@
         <item name="colorAccent">@color/theme_accent</item>
         <item name="android:textColorPrimary">@color/theme_text_primary</item>
         <item name="android:textColorPrimaryInverse">@color/theme_text_primary_light</item>
+
+        <item name="android:fitsSystemWindows">true</item>
     </style>
 
     <style name="AppTheme.Detail">
-        <item name="android:statusBarColor">@android:color/transparent</item>
+
     </style>
 
 </resources>

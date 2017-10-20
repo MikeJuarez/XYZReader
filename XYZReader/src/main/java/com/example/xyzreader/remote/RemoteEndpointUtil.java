@@ -1,12 +1,14 @@
 package com.example.xyzreader.remote;
 
 import android.util.Log;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONTokener;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 import okhttp3.OkHttpClient;
@@ -19,7 +21,7 @@ public class RemoteEndpointUtil {
     private RemoteEndpointUtil() {
     }
 
-    public static JSONArray fetchJsonArray() {
+    public static JSONArray fetchJsonArray(){
         String itemsJson = null;
         try {
             itemsJson = fetchPlainText(Config.BASE_URL);

@@ -5,6 +5,8 @@ import android.util.Log;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import static android.os.Build.VERSION_CODES.M;
+
 public class Config {
     public static final URL BASE_URL;
     private static String TAG = Config.class.toString();
@@ -16,6 +18,7 @@ public class Config {
         } catch (MalformedURLException ignored) {
             // TODO: throw a real error
             Log.e(TAG, "Please check your internet connection.");
+            throw new RuntimeException(ignored);
         }
 
         BASE_URL = url;

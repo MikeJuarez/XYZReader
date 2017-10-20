@@ -3,57 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\user\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="98476622f10715998eacf9240d6b479f12c66143">
-        <dex dex="C:\AndroidStudioProjects\Nanodegree\XYZ Reader\xyz-reader-starter-code\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.6.0_ccebb9545c5da1b53c1ebc75ec0fe8296f782e8e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\AndroidStudioProjects\Nanodegree\XYZ Reader\xyz-reader-starter-code\XYZReader\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="a42283b22acad454becf6d58a0559059e76d1830">
+        sha1="c9b3cb86e5ba2cfa2d236f3d41628394a15b5dc0">
         <dex dex="C:\AndroidStudioProjects\Nanodegree\XYZ Reader\xyz-reader-starter-code\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_f7186045ae869f6aee287db640dc4c2fcef27522\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\user\.android\build-cache\743c4098fbe73314a6f403a0ee2f9001e96fd7ab\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="379a48c2da13ffb7ec7134f2c715663834357670">
-        <dex dex="C:\AndroidStudioProjects\Nanodegree\XYZ Reader\xyz-reader-starter-code\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\10\classes_46378949c24d186b609604d3c9136f4794485a06\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\AndroidStudioProjects\Nanodegree\XYZ Reader\xyz-reader-starter-code\XYZReader\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="C:\AndroidStudioProjects\Nanodegree\XYZ Reader\xyz-reader-starter-code\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_ba0cbc3fcc3195ba51245bf634e6e6193ee2c659\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\user\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.1.2\7052283359001bb108753cb0583a887d3bf94c82\okhttp-3.1.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7052283359001bb108753cb0583a887d3bf94c82">
-        <dex dex="C:\AndroidStudioProjects\Nanodegree\XYZ Reader\xyz-reader-starter-code\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.1.2_3c88ec9c0dcea7ecedd51c26223e40006c2c84d0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\user\.android\build-cache\e17307b9c0ac1123f59bc27b7ed1c83afd943248\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="69ee8c3f146ba6b2ead91fea61a283b19cfbf387">
-        <dex dex="C:\AndroidStudioProjects\Nanodegree\XYZ Reader\xyz-reader-starter-code\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\10\classes_728202599f960e85b0f83ae0d919dc88f7e4f227\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -66,30 +21,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\user\.android\build-cache\64eb8199af1a36f1cd044a62c00d99d54cd1a1d1\output\jars\classes.jar"
+        jar="C:\AndroidStudioProjects\Nanodegree\XYZ Reader\xyz-reader-starter-code\XYZReader\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
-        <dex dex="C:\AndroidStudioProjects\Nanodegree\XYZ Reader\xyz-reader-starter-code\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0c1ffb606d1adb0ca1106df57b5a76edd77b9d0c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\user\.android\build-cache\cfc78abd30e2ca895ee77d444a919ad66705c890\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
-        <dex dex="C:\AndroidStudioProjects\Nanodegree\XYZ Reader\xyz-reader-starter-code\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b853b055899e90fa2236e54d5a60a58269b675f0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\user\.android\build-cache\adc804682051b2adf351e8d3c62ae6bc94822c9b\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8531f2d46b35de75e6130f25830e0c2c0d6bb98c">
-        <dex dex="C:\AndroidStudioProjects\Nanodegree\XYZ Reader\xyz-reader-starter-code\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3904a42ffdcc79819b3f68effae7ff4cae41e546\classes.dex" />
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="C:\AndroidStudioProjects\Nanodegree\XYZ Reader\xyz-reader-starter-code\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_ba0cbc3fcc3195ba51245bf634e6e6193ee2c659\classes.dex" />
     </item>
 
 </items>

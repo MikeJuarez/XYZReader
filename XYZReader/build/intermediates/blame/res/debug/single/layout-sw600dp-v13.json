@@ -2,5 +2,9 @@
     {
         "merged": "C:\\AndroidStudioProjects\\Nanodegree\\XYZ Reader\\xyz-reader-starter-code\\XYZReader\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\design_layout_snackbar.xml",
         "source": "C:\\Users\\user\\.android\\build-cache\\64eb8199af1a36f1cd044a62c00d99d54cd1a1d1\\output\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "C:\\AndroidStudioProjects\\Nanodegree\\XYZ Reader\\xyz-reader-starter-code\\XYZReader\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\list_item_article.xml",
+        "source": "C:\\AndroidStudioProjects\\Nanodegree\\XYZ Reader\\xyz-reader-starter-code\\XYZReader\\src\\main\\res\\layout-sw600dp\\list_item_article.xml"
     }
 ]
