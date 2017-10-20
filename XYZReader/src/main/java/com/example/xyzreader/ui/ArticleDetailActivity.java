@@ -27,6 +27,8 @@ import com.example.xyzreader.data.ItemsContract;
 public class ArticleDetailActivity extends AppCompatActivity
         implements LoaderManager.LoaderCallbacks<Cursor> {
 
+    public static final String KEY_POSITION_CLICKED = "com.example.xyzreader.key_position_clicked";
+
     private Cursor mCursor;
     private long mStartId;
 
@@ -38,6 +40,7 @@ public class ArticleDetailActivity extends AppCompatActivity
     private MyPagerAdapter mPagerAdapter;
     private View mUpButtonContainer;
     private View mUpButton;
+    private int mPositionClicked;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,6 +106,7 @@ public class ArticleDetailActivity extends AppCompatActivity
         if (savedInstanceState == null) {
             if (getIntent() != null && getIntent().getData() != null) {
                 mStartId = ItemsContract.Items.getItemId(getIntent().getData());
+                mPositionClicked = getIntent().getIntExtra(KEY_POSITION_CLICKED, 0);
                 mSelectedItemId = mStartId;
             }
         }
@@ -117,12 +121,12 @@ public class ArticleDetailActivity extends AppCompatActivity
     public void onLoadFinished(Loader<Cursor> cursorLoader, Cursor cursor) {
         mCursor = cursor;
         mPagerAdapter.notifyDataSetChanged();
+        mPager.setCurrentItem(mPositionClicked);
 
         // Select the start ID
-        /*if (mStartId > 0) {*/
-            //mCursor.moveToFirst();
-            // TODO: optimize
-            /*while (!mCursor.isAfterLast()) {
+        /*if (mStartId > 0) {
+            mCursor.moveToFirst();
+            while (!mCursor.isAfterLast()) {
                 if (mCursor.getLong(ArticleLoader.Query._ID) == mStartId) {
                     final int position = mCursor.getPosition();
                     mPager.setCurrentItem(position, false);

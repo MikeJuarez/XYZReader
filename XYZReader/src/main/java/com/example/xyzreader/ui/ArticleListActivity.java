@@ -157,8 +157,12 @@ public class ArticleListActivity extends AppCompatActivity implements
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    startActivity(new Intent(Intent.ACTION_VIEW,
+                    Bundle bundle = new Bundle();
+                    bundle.putInt(ArticleDetailActivity.KEY_POSITION_CLICKED, vh.getAdapterPosition());
+                    Intent intent = new Intent(new Intent(Intent.ACTION_VIEW,
                             ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition()))));
+                    intent.putExtras(bundle);
+                    startActivity(intent);
                 }
             });
             return vh;
